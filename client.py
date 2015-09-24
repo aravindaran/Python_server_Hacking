@@ -3,7 +3,6 @@ import sys, string, select
  
 HOST = '192.168.1.16'   
 PORT = 8888 
- 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 address = (HOST,PORT)
 s.connect(address)
@@ -34,7 +33,6 @@ while 1:
             s.send("complete")
         else:
             break
-
     else:
         print "File doesn't exist"
 
